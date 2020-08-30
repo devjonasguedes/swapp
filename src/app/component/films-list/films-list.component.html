@@ -1,0 +1,21 @@
+<div class="page-list">
+    <div class="page-list__header">
+        <div>Title</div>
+        <div>Director</div>
+        <div>Release Date</div>
+        <div>Producer</div>
+    </div>
+
+    <div class="page-list__content">
+        <ul class="page-list__items">
+            <li *ngFor="let film of films">
+                <a href="#" class="page-list__item box">
+                    <div>{{ film.title }}</div>
+                    <div>{{ film.director }}</div>
+                    <div>{{ film.release_date }}</div>
+                    <div>{{ film.producer }}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

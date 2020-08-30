@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "swapp"
+    }
+  },
+  "defaultProject": "swapp",
+  "cli": {
+    "analytics": "ca0bd4d3-aec1-4f5c-9b27-028a80d360ad"
+  }
 }

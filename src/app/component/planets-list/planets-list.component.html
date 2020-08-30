@@ -1,0 +1,22 @@
+<div class="page-list">
+    <div class="page-list__header">
+        <div>Name</div>
+        <div>Diameter</div>
+        <div>Climate</div>
+        <div>Terrain</div>
+        <div>Population</div>
+    </div>
+
+    <div class="page-list__content">
+        <ul class="page-list__items">
+            <li *ngFor="let planet of planets">
+                <a href="#" class="page-list__item box">
+                    <div>{{ planet.name }}</div>
+                    <div>{{ planet.diameter }}</div>
+                    <div>{{ planet.climate }}</div>
+                    <div>{{ planet.population }}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

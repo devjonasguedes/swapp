@@ -1,0 +1,21 @@
+<div class="page-list">
+    <div class="page-list__header">
+        <div>Name</div>
+        <div>Classification</div>
+        <div>Designation</div>
+        <div>Language</div>
+    </div>
+
+    <div class="page-list__content">
+        <ul class="page-list__items">
+            <li *ngFor="let specie of species">
+                <a href="#" class="page-list__item box">
+                    <div>{{ specie.name }}</div>
+                    <div>{{ specie.classification }}</div>
+                    <div>{{ specie.designation }}</div>
+                    <div>{{ specie.language }}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

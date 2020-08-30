@@ -1,0 +1,23 @@
+<div class="page-list">
+    <div class="page-list__header">
+        <div>Name</div>
+        <div>Model</div>
+        <div>Vehicle class</div>
+        <div>Cost in credits</div>
+        <div>Passengers</div>
+    </div>
+
+    <div class="page-list__content">
+        <ul class="page-list__items">
+            <li *ngFor="let vehicle of vehicles">
+                <a href="#" class="page-list__item box">
+                    <div>{{ vehicle.name }}</div>
+                    <div>{{ vehicle.model }}</div>
+                    <div>{{ vehicle.vehicle_class }}</div>
+                    <div>{{ vehicle.cost_in_credits }}</div>
+                    <div>{{ vehicle.passengers }}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

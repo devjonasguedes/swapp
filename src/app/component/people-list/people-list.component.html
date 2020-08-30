@@ -1,0 +1,23 @@
+<div class="page-list">
+    <div class="page-list__header">
+        <div>Name</div>
+        <div>Birth Year</div>
+        <div>Gender</div>
+        <div>Height</div>
+        <div>Mass</div>
+    </div>
+
+    <div class="page-list__content">
+        <ul class="page-list__items">
+            <li *ngFor="let person of people">
+                <a href="#" class="page-list__item box">
+                    <div>{{ person.name }}</div>
+                    <div>{{ person.birth_year }}</div>
+                    <div>{{ person.gender }}</div>
+                    <div>{{ person.height }}</div>
+                    <div>{{ person.mass }}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

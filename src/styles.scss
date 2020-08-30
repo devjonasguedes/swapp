@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #030206;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+// LISTS STYLE
+
+.page-list {
+
+    &__header {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #272B2E;
+    }
+
+    &__items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 5px;
+        }
+        
+        a {
+            transition: all 200ms ease-in-out;
+            color: white;
+            
+            &:hover {
+                background-color: darken(#272B2E, 10%);
+                border: 1px solid #FFBE53;
+            }
+        }
+    }
+
+    &__header,
+    &__item {
+        display: flex;
+
+        > div {
+            flex: 1;
+            font-size: .9rem;
+
+            &:first-child {
+                flex: 2;
+            }
+        }
+    }
+}
+
+.box {
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #272B2E;
+    border: 1px solid #272B2E;
+
+}

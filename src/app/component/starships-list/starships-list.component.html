@@ -1,0 +1,21 @@
+<div class="page-list">
+    <div class="page-list__header">
+        <div>Name</div>
+        <div>Model</div>
+        <div>Cost in credits</div>
+        <div>Passengers</div>
+    </div>
+
+    <div class="page-list__content">
+        <ul class="page-list__items">
+            <li *ngFor="let starship of starships">
+                <a href="#" class="page-list__item box">
+                    <div>{{ starship.name }}</div>
+                    <div>{{ starship.model }}</div>
+                    <div>{{ starship.cost_in_credits }}</div>
+                    <div>{{ starship.passengers }}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
