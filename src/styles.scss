@@ -5,6 +5,10 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #030206;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    // background-image: url('https://static.dribbble.com/users/146798/screenshots/2871204/800x600.gif');
     color: white;
 }
 
@@ -17,6 +21,7 @@ a:hover {
 // LISTS STYLE
 
 .page-list {
+    padding-bottom: 40px;
 
     &__header {
         margin-bottom: 20px;

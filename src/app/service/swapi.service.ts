@@ -8,18 +8,6 @@ export class SwapiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getPeoples() {}
-
-  getFilms() {}
-  
-  getSpecies() {}
-  
-  getPlanets() {}
-  
-  getStarships() {}
-  
-  getVehicles() {}
-
   getApi(endpoint) {
     let baseUrl: string = 'https://swapi.dev/api/';
     return this.httpClient.get(`${baseUrl}${endpoint}`);

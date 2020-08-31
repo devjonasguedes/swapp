@@ -9,7 +9,7 @@
     <div class="page-list__content">
         <ul class="page-list__items">
             <li *ngFor="let film of films">
-                <a href="#" class="page-list__item box">
+                <a routerLink="/film/{{film.title}}" class="page-list__item box">
                     <div>{{ film.title }}</div>
                     <div>{{ film.director }}</div>
                     <div>{{ film.release_date }}</div>
@@ -17,5 +17,6 @@
                 </a>
             </li>
         </ul>
+        <p *ngIf="films?.length === 0">Não encontramos nenhum filme</p>
     </div>
 </div>
